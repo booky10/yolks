@@ -22,4 +22,6 @@ for ((i = 0; i < ${#VERSIONS[@]}; i++)); do
         echo "Pushing $BASE_NAME v${VERSIONS[i]} (tag: $TAG)..."
         docker push "$TAG"
     fi
+
+    sleep 1m
 done

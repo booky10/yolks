@@ -21,6 +21,8 @@ for ((i = 0; i < ${#VERSIONS[@]}; i++)); do
         docker push "$TAG"
     fi
 
+    sleep 1m
+
     if [ -e "$DIR/GypDockerfile" ]; then
         TAG="$TAG_BASE:${BASE_NAME}gyp${VERSIONS[i]}"
         DIR="$PWD/${VERSIONS[i]}"
@@ -38,4 +40,6 @@ for ((i = 0; i < ${#VERSIONS[@]}; i++)); do
             docker push "$TAG"
         fi
     fi
+
+    sleep 1m
 done
