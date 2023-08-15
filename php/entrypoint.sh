@@ -18,8 +18,8 @@ php --version
 
 # Print Nginx version, if exists
 if command -v nginx &> /dev/null; then
-    printf "\033[1m\033[33mcontainer@pterodactyl~ \033[0mnginx --version\n"
-    nginx --version
+    printf "\033[1m\033[33mcontainer@pterodactyl~ \033[0mnginx -version\n"
+    nginx -version
 fi
 
 # Convert all of the "{{VARIABLE}}" parts of the command into the expected shell
