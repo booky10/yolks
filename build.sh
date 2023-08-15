@@ -11,5 +11,8 @@ cd "$REPO_ROOT_DIR/java"
 cd "$REPO_ROOT_DIR/nodejs"
 ./build.sh
 
+cd "$REPO_ROOT_DIR/php"
+./build.sh
+
 cd "$REPO_ROOT_DIR/python"
 ./build.sh
