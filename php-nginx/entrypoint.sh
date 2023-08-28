@@ -15,6 +15,9 @@ cd /home/container || exit 1
 printf "\033[1m\033[33mcontainer@pterodactyl~ \033[0mphp --version\n"
 php --version
 
+printf "\033[1m\033[33mcontainer@pterodactyl~ \033[0mnginx -version\n"
+nginx -version
+
 # Convert all of the "{{VARIABLE}}" parts of the command into the expected shell
 # variable format of "${VARIABLE}" before evaluating the string and automatically
 # replacing the values.

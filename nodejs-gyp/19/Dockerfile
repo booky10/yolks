@@ -1,4 +1,4 @@
-FROM        --platform=$TARGETOS/$TARGETARCH node:20-alpine
+FROM        --platform=$TARGETOS/$TARGETARCH node:19-alpine
 
 LABEL       author="booky10" maintainer="boooky10@gmail.com"
 
@@ -13,5 +13,5 @@ USER        container
 ENV         USER=container HOME=/home/container
 WORKDIR     /home/container
 
-COPY        ./../gyp_entrypoint.sh /entrypoint.sh
+COPY        ./../entrypoint.sh /entrypoint.sh
 CMD         [ "/bin/ash", "/entrypoint.sh" ]
