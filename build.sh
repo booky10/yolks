@@ -39,9 +39,6 @@ build () {
 	done
 }
 
-declare -a VERSIONS=("act-runner")
-build "gitea"
-
 declare -a VERSIONS=("8" "11" "16" "17" "18" "19" "20")
 build "java"
 
