@@ -9,6 +9,13 @@ build () {
 	BASE_NAME=$1
 	cd "$REPO_ROOT_DIR/$BASE_NAME"
 
+	if [ ! -z "$WHITELIST" ]; then
+		if [ "$BASE_NAME" != "$WHITELIST" ]; then
+			echo "Skipping $BASE_NAME..."
+			return
+		fi
+	fi
+
 	for ((i = 0; i < ${#VERSIONS[@]}; i++)); do
 	    TAG="$TAG_BASE:${BASE_NAME//-/}${VERSIONS[i]}"
 	    DIR="$PWD/${VERSIONS[i]}"

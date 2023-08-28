@@ -13,7 +13,6 @@ RUN         apk add --update --no-cache curl xz \
 	&& chmod +x /usr/local/bin/act_runner \
 	&& adduser -D -h /home/container container
 
-USER        container
 ENV         USER=container HOME=/home/container
 WORKDIR     /home/container
 
