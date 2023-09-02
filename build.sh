@@ -39,6 +39,9 @@ build () {
 	done
 }
 
+declare -a VERSIONS=("10.3" "10.4" "10.5" "10.6" "10.9" "10.10" "10.11" "11.0" "11.1")
+build "mariadb"
+
 declare -a VERSIONS=("8" "11" "16" "17" "18" "19" "20")
 build "java"
 
