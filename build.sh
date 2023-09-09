@@ -45,6 +45,8 @@ build "mariadb"
 declare -a VERSIONS=("8" "11" "16" "17" "18" "19" "20")
 build "java"
 
+declare -a VERSIONS=("1.0")
+build "bun"
 declare -a VERSIONS=("12" "14" "15" "16" "17" "18" "19" "20")
 build "nodejs"
 declare -a VERSIONS=("18" "19" "20")
