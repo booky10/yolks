@@ -44,6 +44,8 @@ build "mariadb"
 
 declare -a VERSIONS=("8" "11" "16" "17" "18" "19" "20")
 build "java"
+declare -a VERSIONS=("8" "11" "17" "18" "19" "20")
+build "java-alpine"
 
 declare -a VERSIONS=("1.0")
 build "bun"
