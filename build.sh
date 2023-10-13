@@ -61,3 +61,8 @@ build "php-nginx"
 
 declare -a VERSIONS=("3.8" "3.9" "3.10" "3.11")
 build "python"
+
+declare -a VERSIONS=("1.20" "1.21")
+build "go"
+declare -a VERSIONS=("1.20-18" "1.21-18")
+build "go-nodejs"
