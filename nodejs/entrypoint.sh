@@ -16,12 +16,12 @@ printf "\033[1m\033[33mcontainer@pterodactyl~ \033[0mnode --version\n"
 node --version
 
 # Convert all of the "{{VARIABLE}}" parts of the command into the expected shell
-# variable format of "${VARIABLE}" before evaluating the string and automatically
-# replacing the values.
-PARSED=$(echo "${STARTUP}" | sed -e 's/{{/${/g' -e 's/}}/}/g' | eval echo "$(cat -)")
+# variable format of "${VARIABLE}".
+PARSED=$(echo "${STARTUP}" | sed -e 's/{{/${/g' -e 's/}}/}/g')
 
-# Display the command we're running in the output, and then execute it with the env
-# from the container itself.
+# Display the command we're running in the output before exection
 printf "\033[1m\033[33mcontainer@pterodactyl~ \033[0m%s\n" "$PARSED"
+
+# pass the parsed startup args to sh for execution
 # shellcheck disable=SC2086
-exec env ${PARSED}
+exec sh -c "${PARSED}"
