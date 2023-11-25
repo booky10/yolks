@@ -59,7 +59,7 @@ build "php"
 declare -a VERSIONS=("8.1")
 build "php-nginx"
 
-declare -a VERSIONS=("3.8" "3.9" "3.10" "3.11")
+declare -a VERSIONS=("3.8" "3.9" "3.10" "3.11" "3.12")
 build "python"
 
 declare -a VERSIONS=("1.20" "1.21")
