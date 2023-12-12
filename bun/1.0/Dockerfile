@@ -1,4 +1,4 @@
-FROM        --platform=$TARGETOS/$TARGETARCH oven/bun:1.0.0
+FROM        --platform=$TARGETOS/$TARGETARCH oven/bun:1.0
 
 LABEL       author="booky10" maintainer="boooky10@gmail.com"
 
@@ -14,4 +14,4 @@ ENV         USER=container HOME=/home/container
 WORKDIR     /home/container
 
 COPY        ./../entrypoint.sh /entrypoint.sh
-CMD         [ "/bin/ash", "/entrypoint.sh" ]
+CMD         [ "/bin/bash", "/entrypoint.sh" ]
