@@ -54,7 +54,7 @@ build "nodejs"
 declare -a VERSIONS=("18" "19" "20" "21")
 build "nodejs-gyp"
 
-declare -a VERSIONS=("8.1" "8.2")
+declare -a VERSIONS=("8.1" "8.2" "8.3")
 build "php"
 declare -a VERSIONS=("8.1")
 build "php-nginx"
@@ -64,5 +64,5 @@ build "python"
 
 declare -a VERSIONS=("1.20" "1.21")
 build "go"
-declare -a VERSIONS=("1.20-18" "1.21-18")
+declare -a VERSIONS=("1.20-18" "1.21-18" "1.20-20" "1.21-20")
 build "go-nodejs"
