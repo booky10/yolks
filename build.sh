@@ -51,7 +51,7 @@ declare -a VERSIONS=("1.0")
 build "bun"
 declare -a VERSIONS=("12" "14" "15" "16" "17" "18" "19" "20" "21")
 build "nodejs"
-declare -a VERSIONS=("18" "19" "20" "21")
+declare -a VERSIONS=("16" "18" "19" "20" "21")
 build "nodejs-gyp"
 
 declare -a VERSIONS=("8.1" "8.2" "8.3")
