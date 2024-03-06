@@ -8,6 +8,8 @@ Pre-build images are hosted on docker hub at [`booky10/yolks`](https://hub.docke
 
 The tag base can be customized by setting the environment variable `TAG_BASE`. To automatically publish the images while building, set a value to environment variable `PUBLISH_IMAGES` (e.g. `true`). If you only want to build a specific image, set environment variable `WHITELIST` to the specific image name (e.g. `java-alpine`).
 
+To invoke the build process, use the `build.sh` script in a linux environment.
+
 ## Licensing
 
 Like [pterodactyl/yolks](https://github.com/pterodactyl/yolks), all images and entrypoint scripts available in this repository are also licensed under the terms of the [MIT license](./LICENSE).
