@@ -56,6 +56,8 @@ build "nodejs-gyp"
 
 declare -a VERSIONS=("8.1" "8.2" "8.3")
 build "php"
+declare -a VERSIONS=("8.3")
+build "php-lite"
 declare -a VERSIONS=("8.1")
 build "php-nginx"
 

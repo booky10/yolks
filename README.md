@@ -180,6 +180,10 @@ This list is sorted alphabetically, with ascending version numbers.
     -   `8.3`
         -   `booky10/yolks:php8.3`
         -   `booky10/yolksarm:php8.3`
+-   `php-lite`
+    -   `8.3`
+        -   `booky10/yolks:phplite8.3`
+        -   `booky10/yolksarm:phplite8.3`
 -   `php-nginx`
     -   `8.1`
         -   `booky10/yolks:phpnginx8.1`
