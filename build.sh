@@ -47,11 +47,11 @@ build "java"
 declare -a VERSIONS=("8" "11" "17" "18" "19" "20" "21")
 build "java-alpine"
 
-declare -a VERSIONS=("1.0")
+declare -a VERSIONS=("1.0" "1.1")
 build "bun"
-declare -a VERSIONS=("12" "14" "15" "16" "17" "18" "19" "20" "21")
+declare -a VERSIONS=("12" "14" "15" "16" "17" "18" "19" "20" "21" "22")
 build "nodejs"
-declare -a VERSIONS=("16" "18" "19" "20" "21")
+declare -a VERSIONS=("16" "18" "19" "20" "21" "22")
 build "nodejs-gyp"
 
 declare -a VERSIONS=("8.1" "8.2" "8.3")

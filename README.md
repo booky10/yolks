@@ -22,6 +22,9 @@ This list is sorted alphabetically, with ascending version numbers.
     -   `1.0`
         -   `booky10/yolks:bun1.0`
         -   `booky10/yolksarm:bun1.0`
+    -   `1.1`
+        -   `booky10/yolks:bun1.1`
+        -   `booky10/yolksarm:bun1.1`
 -   `go`
     -   `1.20`
         -   `booky10/yolks:go1.20`
@@ -154,6 +157,9 @@ This list is sorted alphabetically, with ascending version numbers.
     -   `21`
         -   `booky10/yolks:nodejs21`
         -   `booky10/yolksarm:nodejs21`
+    -   `22`
+        -   `booky10/yolks:nodejs22`
+        -   `booky10/yolksarm:nodejs22`
 -   `nodejs-gyp`
     -   `16`
         -   `booky10/yolks:nodejsgyp16`
@@ -170,6 +176,9 @@ This list is sorted alphabetically, with ascending version numbers.
     -   `21`
         -   `booky10/yolks:nodejsgyp21`
         -   `booky10/yolksarm:nodejsgyp21`
+    -   `22`
+        -   `booky10/yolks:nodejsgyp22`
+        -   `booky10/yolksarm:nodejsgyp22`
 -   `php`
     -   `8.1`
         -   `booky10/yolks:php8.1`
