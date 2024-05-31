@@ -52,24 +52,27 @@ This list is sorted alphabetically, with ascending version numbers.
     -   `11`
         -   `booky10/yolks:java11`
         -   `booky10/yolksarm:java11`
-    -   `16`
+    -   `16` (unsupported)
         -   `booky10/yolks:java16`
         -   `booky10/yolksarm:java16`
     -   `17`
         -   `booky10/yolks:java17`
         -   `booky10/yolksarm:java17`
-    -   `18`
+    -   `18` (unsupported)
         -   `booky10/yolks:java18`
         -   `booky10/yolksarm:java18`
-    -   `19`
+    -   `19` (unsupported)
         -   `booky10/yolks:java19`
         -   `booky10/yolksarm:java19`
-    -   `20`
+    -   `20` (unsupported)
         -   `booky10/yolks:java20`
         -   `booky10/yolksarm:java20`
     -   `21`
         -   `booky10/yolks:java21`
         -   `booky10/yolksarm:java21`
+    -   `22`
+        -   `booky10/yolks:java22`
+        -   `booky10/yolksarm:java22`
 -   `java-alpine`
     -   `8`
         -   `booky10/yolks:javaalpine8`
@@ -77,24 +80,27 @@ This list is sorted alphabetically, with ascending version numbers.
     -   `11`
         -   `booky10/yolks:javaalpine11`
         -   `booky10/yolksarm:javaalpine11`
-    -   `16`
+    -   `16` (unsupported)
         -   `booky10/yolks:javaalpine16`
         -   `booky10/yolksarm:javaalpine16`
     -   `17`
         -   `booky10/yolks:javaalpine17`
         -   `booky10/yolksarm:javaalpine17`
-    -   `18`
+    -   `18` (unsupported)
         -   `booky10/yolks:javaalpine18`
         -   `booky10/yolksarm:javaalpine18`
-    -   `19`
+    -   `19` (unsupported)
         -   `booky10/yolks:javaalpine19`
         -   `booky10/yolksarm:javaalpine19`
-    -   `20`
+    -   `20` (unsupported)
         -   `booky10/yolks:javaalpine20`
         -   `booky10/yolksarm:javaalpine20`
     -   `21`
         -   `booky10/yolks:javaalpine21`
         -   `booky10/yolksarm:javaalpine21`
+    -   `22`
+        -   `booky10/yolks:javaalpine22`
+        -   `booky10/yolksarm:javaalpine22`
 -   `mariadb`
     -   `10.3`
         -   `booky10/yolks:mariadb10.3`
