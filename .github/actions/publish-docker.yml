@@ -1,3 +1,4 @@
+# TODO: is there any way to dynamically reference this file?
 name: "Publish Docker Images"
 
 inputs:

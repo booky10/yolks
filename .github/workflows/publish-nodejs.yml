@@ -11,7 +11,7 @@ jobs:
         tag:
           - nodejs/20
     steps:
-      - uses: "${{ github.repository }}/.github/actions/publish-docker@${{ github.ref }}"
+      - uses: "booky10/yolks/.github/actions/publish-docker@master"
         with:
           username: "${{ secrets.REGISTRY_USER }}"
           password: "${{ secrets.REGISTRY_PASS }}"
