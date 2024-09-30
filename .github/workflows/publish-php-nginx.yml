@@ -1,11 +1,11 @@
-name: Publish NodeJS Images
+name: Publish PHP Nginx Images
 on:
   workflow_dispatch:
   push:
     branches:
     - master
     paths:
-    - nodejs/**
+    - php-nginx/**
 jobs:
   push:
     name: "Build ${{ matrix.tag }}"
@@ -14,9 +14,8 @@ jobs:
       fail-fast: false
       matrix:
         tag:
-        - nodejs/18
-        - nodejs/20
-        - nodejs/22
+        - php-nginx/8.2
+        - php-nginx/8.3
     steps:
     - uses: "booky10/yolks/.github/actions/publish-docker@master"
       with:

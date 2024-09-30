@@ -1,11 +1,11 @@
-name: Publish NodeJS Images
+name: Publish Bun Images
 on:
   workflow_dispatch:
   push:
     branches:
     - master
     paths:
-    - nodejs/**
+    - bun/**
 jobs:
   push:
     name: "Build ${{ matrix.tag }}"
@@ -14,9 +14,8 @@ jobs:
       fail-fast: false
       matrix:
         tag:
-        - nodejs/18
-        - nodejs/20
-        - nodejs/22
+        - bun/1.0
+        - bun/1.1
     steps:
     - uses: "booky10/yolks/.github/actions/publish-docker@master"
       with:

@@ -1,11 +1,11 @@
-name: Publish NodeJS Images
+name: Publish Java Images
 on:
   workflow_dispatch:
   push:
     branches:
     - master
     paths:
-    - nodejs/**
+    - java/**
 jobs:
   push:
     name: "Build ${{ matrix.tag }}"
@@ -14,9 +14,11 @@ jobs:
       fail-fast: false
       matrix:
         tag:
-        - nodejs/18
-        - nodejs/20
-        - nodejs/22
+        - java/8
+        - java/11
+        - java/17
+        - java/21
+        - java/23
     steps:
     - uses: "booky10/yolks/.github/actions/publish-docker@master"
       with:

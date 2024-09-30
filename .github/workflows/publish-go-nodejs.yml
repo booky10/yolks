@@ -1,11 +1,11 @@
-name: Publish NodeJS Images
+name: Publish Go NodeJS Images
 on:
   workflow_dispatch:
   push:
     branches:
     - master
     paths:
-    - nodejs/**
+    - go-nodejs/**
 jobs:
   push:
     name: "Build ${{ matrix.tag }}"
@@ -14,9 +14,12 @@ jobs:
       fail-fast: false
       matrix:
         tag:
-        - nodejs/18
-        - nodejs/20
-        - nodejs/22
+        - go-nodejs/1.22-18
+        - go-nodejs/1.22-20
+        - go-nodejs/1.22-22
+        - go-nodejs/1.23-18
+        - go-nodejs/1.23-20
+        - go-nodejs/1.23-22
     steps:
     - uses: "booky10/yolks/.github/actions/publish-docker@master"
       with:

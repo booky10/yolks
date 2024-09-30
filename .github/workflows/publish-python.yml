@@ -1,11 +1,11 @@
-name: Publish NodeJS Images
+name: Publish Python Images
 on:
   workflow_dispatch:
   push:
     branches:
     - master
     paths:
-    - nodejs/**
+    - python/**
 jobs:
   push:
     name: "Build ${{ matrix.tag }}"
@@ -14,9 +14,11 @@ jobs:
       fail-fast: false
       matrix:
         tag:
-        - nodejs/18
-        - nodejs/20
-        - nodejs/22
+        - python/3.8
+        - python/3.9
+        - python/3.10
+        - python/3.11
+        - python/3.12
     steps:
     - uses: "booky10/yolks/.github/actions/publish-docker@master"
       with:

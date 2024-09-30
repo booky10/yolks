@@ -1,11 +1,11 @@
-name: Publish NodeJS Images
+name: Publish MariaDB Images
 on:
   workflow_dispatch:
   push:
     branches:
     - master
     paths:
-    - nodejs/**
+    - mariadb/**
 jobs:
   push:
     name: "Build ${{ matrix.tag }}"
@@ -14,9 +14,12 @@ jobs:
       fail-fast: false
       matrix:
         tag:
-        - nodejs/18
-        - nodejs/20
-        - nodejs/22
+        - mariadb/10.5
+        - mariadb/10.6
+        - mariadb/10.11
+        - mariadb/11.2
+        - mariadb/11.4
+        - mariadb/11.5
     steps:
     - uses: "booky10/yolks/.github/actions/publish-docker@master"
       with:

@@ -1,11 +1,11 @@
-name: Publish NodeJS Images
+name: Publish NodeJS Gyp Images
 on:
   workflow_dispatch:
   push:
     branches:
     - master
     paths:
-    - nodejs/**
+    - nodejs-gyp/**
 jobs:
   push:
     name: "Build ${{ matrix.tag }}"
@@ -14,9 +14,9 @@ jobs:
       fail-fast: false
       matrix:
         tag:
-        - nodejs/18
-        - nodejs/20
-        - nodejs/22
+        - nodejs-gyp/18
+        - nodejs-gyp/20
+        - nodejs-gyp/22
     steps:
     - uses: "booky10/yolks/.github/actions/publish-docker@master"
       with:
