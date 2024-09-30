@@ -1,0 +1,19 @@
+name: Publish Images
+on:
+  workflow_dispatch:
+jobs:
+  push:
+    name: "Build ${{ matrix.tag }}"
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        tag:
+          - nodejs/20
+    steps:
+      - uses: "${{ github.repository }}/.github/actions/publish-docker@${{ github.ref }}"
+        with:
+          username: "${{ secrets.REGISTRY_USER }}"
+          password: "${{ secrets.REGISTRY_PASS }}"
+          tag: "${{ matrix.tag }}"
+          platforms: "linux/amd64,linux/arm64"
