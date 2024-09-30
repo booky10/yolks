@@ -3,83 +3,32 @@ on:
   workflow_dispatch:
 jobs:
   push:
-    name: "${{ matrix.tag }}"
+    name: "Build ${{ matrix.tag }}"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
         tag:
-          - bun/1.0
-          - bun/1.1
-          - go/1.20
-          - go/1.21
-          - go-nodejs/1.20-18
-          - go-nodejs/1.20-20
-          - go-nodejs/1.21-18
-          - go-nodejs/1.21-20
-          - java/8
-          - java/11
-          - java/17
-          - java/21
-          - java/22
-          - java-alpine/8
-          - java-alpine/11
-          - java-alpine/17
-          - java-alpine/21
-          - java-alpine/22
-          - mariadb/10.3
-          - mariadb/10.4
-          - mariadb/10.5
-          - mariadb/10.6
-          - mariadb/10.9
-          - mariadb/10.10
-          - mariadb/10.11
-          - mariadb/11.0
-          - mariadb/11.1
-          - mariadb/11.2
-          - mariadb/11.3
-          - nodejs/12
-          - nodejs/14
-          - nodejs/15
-          - nodejs/16
-          - nodejs/17
-          - nodejs/18
-          - nodejs/19
+          # todo add tags back
           - nodejs/20
-          - nodejs/21
-          - nodejs/22
-          - nodejs-gyp/16
-          - nodejs-gyp/18
-          - nodejs-gyp/19
-          - nodejs-gyp/20
-          - nodejs-gyp/21
-          - nodejs-gyp/22
-          - php/8.1
-          - php/8.2
-          - php/8.3
-          - php-lite/8.3
-          - php-nginx/8.1
-          - python/3.8
-          - python/3.9
-          - python/3.10
-          - python/3.11
-          - python/3.12
     steps:
       - uses: actions/checkout@v4
       - uses: docker/setup-qemu-action@v3
       - uses: docker/setup-buildx-action@v3
-      - uses: docker/login-action@v2
+      - uses: docker/login-action@v3
         with:
-            # todo replace credentials
-          registry: ghcr.io
-          username: ${{ github.repository_owner }}
-          password: ${{ secrets.REGISTRY_TOKEN }}
+          username: ${{ secrets.REGISTRY_USER }}
+          password: ${{ secrets.REGISTRY_PASS }}
+      - uses: actions/github-script@v7
+        id: tagger
+        with:
+          result-encoding: string
+          script: "return '${{ matrix.tag }}'.replace('/', '').replace('-', '')"
       - uses: docker/build-push-action@v4
         with:
-            # todo replace with script
-          context: ./java
-          file: ./java/${{ matrix.tag }}/Dockerfile
-          platforms: linux/amd64,linux/arm64
+          context: "./${{ matrix.tag }}/.."
+          file: "./${{ matrix.tag }}/Dockerfile"
+          platforms: "linux/amd64,linux/arm64"
           push: true
           tags: |
-            ghcr.io/pterodactyl/yolks:java_${{ matrix.tag }}
+            ${{ secrets.REGISTRY_USER }}/yolks:${{ steps.tagger.outputs.result }}
