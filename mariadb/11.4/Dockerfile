@@ -5,10 +5,10 @@ LABEL       author="booky10" maintainer="boooky10@gmail.com"
 LABEL       org.opencontainers.image.source="https://github.com/booky10/yolks"
 LABEL       org.opencontainers.image.licenses=MIT
 
-ENV         DEBIAN_FRONTEND noninteractive
+ENV         DEBIAN_FRONTEND=noninteractive
 
 RUN         apt-get update -y \
-        && apt-get install -y netcat \
+        && apt-get install -y netcat-openbsd \
         && useradd -d /home/container -m container -s /bin/bash
 
 USER        container
