@@ -1,14 +1,19 @@
 # TODO: is there any way to dynamically reference this file?
 name: "Publish Docker Images"
+description: "Common logic for publishing docker images from this repository"
 
 inputs:
   username:
+    description: "The username for publishing to the docker registry"
     required: true
   password:
+    description: "The password for publishing to the docker registry"
     required: true
   tag:
+    description: "The tag of the docker image to publish"
     required: true
   platforms:
+    description: "The targetted platforms for this image"
     required: true
 
 runs:
