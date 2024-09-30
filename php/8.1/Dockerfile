@@ -1,4 +1,5 @@
-FROM        --platform=$TARGETOS/$TARGETARCH alpine
+# alpine 3.20 no longer includes php v8.1, so stay at alpine v3.19 here
+FROM        --platform=$TARGETOS/$TARGETARCH alpine:3.19
 
 LABEL       author="booky10" maintainer="boooky10@gmail.com"
 

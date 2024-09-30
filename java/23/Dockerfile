@@ -1,4 +1,4 @@
-FROM        --platform=$TARGETOS/$TARGETARCH eclipse-temurin:11-jdk-noble
+FROM        --platform=$TARGETOS/$TARGETARCH eclipse-temurin:23-jdk-noble
 
 LABEL       author="booky10" maintainer="boooky10@gmail.com"
 
