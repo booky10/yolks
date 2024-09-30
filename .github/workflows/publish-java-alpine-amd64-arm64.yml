@@ -1,4 +1,4 @@
-name: Publish Java Alpine Images
+name: Publish Java Alpine Images (amd64/arm64)
 on:
   workflow_dispatch:
   push:
@@ -14,9 +14,6 @@ jobs:
       fail-fast: false
       matrix:
         tag:
-        - java-alpine/8
-        - java-alpine/11
-        - java-alpine/17
         - java-alpine/21
         - java-alpine/23
     steps:

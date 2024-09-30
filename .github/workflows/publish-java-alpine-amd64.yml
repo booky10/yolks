@@ -1,0 +1,26 @@
+name: Publish Java Alpine Images (amd64)
+on:
+  workflow_dispatch:
+  push:
+    branches:
+    - master
+    paths:
+    - java-alpine/**
+jobs:
+  push:
+    name: "Build ${{ matrix.tag }}"
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        tag:
+        - java-alpine/8
+        - java-alpine/11
+        - java-alpine/17
+    steps:
+    - uses: "booky10/yolks/.github/actions/publish-docker@master"
+      with:
+        username: "${{ secrets.REGISTRY_USER }}"
+        password: "${{ secrets.REGISTRY_PASS }}"
+        tag: "${{ matrix.tag }}"
+        platforms: "linux/amd64"
