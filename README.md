@@ -30,9 +30,11 @@ This list is sorted alphabetically, with ascending version numbers.
     -   `booky10/yolks:go1.22-18`
     -   `booky10/yolks:go1.22-20`
     -   `booky10/yolks:go1.22-22`
+    -   `booky10/yolks:go1.22-23`
     -   `booky10/yolks:go1.23-18`
     -   `booky10/yolks:go1.23-20`
     -   `booky10/yolks:go1.23-22`
+    -   `booky10/yolks:go1.23-23`
 -   `java`
     -   `booky10/yolks:java8`
     -   `booky10/yolks:java11`
@@ -56,10 +58,12 @@ This list is sorted alphabetically, with ascending version numbers.
     -   `booky10/yolks:nodejs18`
     -   `booky10/yolks:nodejs20`
     -   `booky10/yolks:nodejs22`
+    -   `booky10/yolks:nodejs23`
 -   `nodejs-gyp`
     -   `booky10/yolks:nodejsgyp18`
     -   `booky10/yolks:nodejsgyp20`
     -   `booky10/yolks:nodejsgyp22`
+    -   `booky10/yolks:nodejsgyp23`
 -   `php`
     -   `booky10/yolks:php8.1`
     -   `booky10/yolks:php8.2`
@@ -68,7 +72,6 @@ This list is sorted alphabetically, with ascending version numbers.
     -   `booky10/yolks:phpnginx8.2`
     -   `booky10/yolks:phpnginx8.3`
 -   `python`
-    -   `booky10/yolks:python3.8`
     -   `booky10/yolks:python3.9`
     -   `booky10/yolks:python3.10`
     -   `booky10/yolks:python3.11`
