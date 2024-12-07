@@ -19,6 +19,7 @@ jobs:
         - mariadb/10.11
         - mariadb/11.4
         - mariadb/11.5
+        - mariadb/11.6
     steps:
     - uses: "booky10/yolks/.github/actions/publish-docker@master"
       with:
