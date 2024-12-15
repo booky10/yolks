@@ -52,7 +52,7 @@ This list is sorted alphabetically, with ascending version numbers.
     -   `booky10/yolks:mariadb10.6`
     -   `booky10/yolks:mariadb10.11`
     -   `booky10/yolks:mariadb11.4`
-    -   `booky10/yolks:mariadb11.5`
+    -   `booky10/yolks:mariadb11.6`
 -   `nodejs`
     -   `booky10/yolks:nodejs18`
     -   `booky10/yolks:nodejs20`
@@ -67,6 +67,7 @@ This list is sorted alphabetically, with ascending version numbers.
     -   `booky10/yolks:php8.1`
     -   `booky10/yolks:php8.2`
     -   `booky10/yolks:php8.3`
+    -   `booky10/yolks:php8.4`
 -   `php-nginx`
     -   `booky10/yolks:phpnginx8.2`
     -   `booky10/yolks:phpnginx8.3`
