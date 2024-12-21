@@ -69,8 +69,10 @@ This list is sorted alphabetically, with ascending version numbers.
     -   `booky10/yolks:php8.3`
     -   `booky10/yolks:php8.4`
 -   `php-nginx`
+    -   `booky10/yolks:phpnginx8.1`
     -   `booky10/yolks:phpnginx8.2`
     -   `booky10/yolks:phpnginx8.3`
+    -   `booky10/yolks:phpnginx8.4`
 -   `python`
     -   `booky10/yolks:python3.9`
     -   `booky10/yolks:python3.10`
