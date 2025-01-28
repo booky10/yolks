@@ -23,6 +23,7 @@ This list is sorted alphabetically, with ascending version numbers.
 -   `bun`
     -   `booky10/yolks:bun1.0`
     -   `booky10/yolks:bun1.1`
+    -   `booky10/yolks:bun1.2`
 -   `go`
     -   `booky10/yolks:go1.22`
     -   `booky10/yolks:go1.23`
