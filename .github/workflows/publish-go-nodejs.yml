@@ -14,14 +14,14 @@ jobs:
       fail-fast: false
       matrix:
         tag:
-        - go-nodejs/1.22-18
-        - go-nodejs/1.22-20
-        - go-nodejs/1.22-22
-        - go-nodejs/1.22-23
         - go-nodejs/1.23-18
         - go-nodejs/1.23-20
         - go-nodejs/1.23-22
         - go-nodejs/1.23-23
+        - go-nodejs/1.24-18
+        - go-nodejs/1.24-20
+        - go-nodejs/1.24-22
+        - go-nodejs/1.24-23
     steps:
     - uses: "booky10/yolks/.github/actions/publish-docker@master"
       with:
