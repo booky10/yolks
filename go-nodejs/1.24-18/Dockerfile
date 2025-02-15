@@ -1,4 +1,4 @@
-FROM        --platform=$TARGETOS/$TARGETARCH golang:1.22-bookworm
+FROM        --platform=$TARGETOS/$TARGETARCH golang:1.24-bookworm
 
 LABEL       author="booky10" maintainer="boooky10@gmail.com"
 
