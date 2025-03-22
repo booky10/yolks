@@ -15,7 +15,7 @@ jobs:
       matrix:
         tag:
         - java-alpine/21
-        - java-alpine/23
+        - java-alpine/24
     steps:
     - uses: "booky10/yolks/.github/actions/publish-docker@master"
       with:

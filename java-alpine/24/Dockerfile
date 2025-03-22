@@ -1,4 +1,4 @@
-FROM        --platform=$TARGETOS/$TARGETARCH eclipse-temurin:23-jre-alpine
+FROM        --platform=$TARGETOS/$TARGETARCH eclipse-temurin:24-jre-alpine
 
 LABEL       author="booky10" maintainer="boooky10@gmail.com"
 
