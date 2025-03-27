@@ -41,13 +41,13 @@ This list is sorted alphabetically, with ascending version numbers.
     -   `booky10/yolks:java11`
     -   `booky10/yolks:java17`
     -   `booky10/yolks:java21`
-    -   `booky10/yolks:java23`
+    -   `booky10/yolks:java24`
 -   `java-alpine`
     -   `booky10/yolks:javaalpine8` (no `linux/arm64` variant)
     -   `booky10/yolks:javaalpine11` (no `linux/arm64` variant)
     -   `booky10/yolks:javaalpine17` (no `linux/arm64` variant)
     -   `booky10/yolks:javaalpine21`
-    -   `booky10/yolks:javaalpine23`
+    -   `booky10/yolks:javaalpine24`
 -   `mariadb`
     -   `booky10/yolks:mariadb10.5`
     -   `booky10/yolks:mariadb10.6`
