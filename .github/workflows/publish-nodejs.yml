@@ -14,10 +14,10 @@ jobs:
       fail-fast: false
       matrix:
         tag:
-        - nodejs/18
         - nodejs/20
         - nodejs/22
         - nodejs/23
+        - nodejs/24
     steps:
     - uses: "booky10/yolks/.github/actions/publish-docker@master"
       with:

@@ -1,4 +1,4 @@
-FROM        --platform=$TARGETOS/$TARGETARCH node:18-alpine3.18
+FROM        --platform=$TARGETOS/$TARGETARCH node:24-alpine
 
 LABEL       author="booky10" maintainer="boooky10@gmail.com"
 

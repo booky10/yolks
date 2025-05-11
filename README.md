@@ -28,14 +28,12 @@ This list is sorted alphabetically, with ascending version numbers.
     -   `booky10/yolks:go1.23`
     -   `booky10/yolks:go1.24`
 -   `go-nodejs`
-    -   `booky10/yolks:go1.23-18`
-    -   `booky10/yolks:go1.23-20`
-    -   `booky10/yolks:go1.23-22`
-    -   `booky10/yolks:go1.23-23`
-    -   `booky10/yolks:go1.24-18`
-    -   `booky10/yolks:go1.24-20`
-    -   `booky10/yolks:go1.24-22`
-    -   `booky10/yolks:go1.24-23`
+    -   `booky10/yolks:gonodejs1.23-20`
+    -   `booky10/yolks:gonodejs1.23-22`
+    -   `booky10/yolks:gonodejs1.23-23`
+    -   `booky10/yolks:gonodejs1.24-20`
+    -   `booky10/yolks:gonodejs1.24-22`
+    -   `booky10/yolks:gonodejs1.24-23`
 -   `java`
     -   `booky10/yolks:java8`
     -   `booky10/yolks:java11`
@@ -55,15 +53,15 @@ This list is sorted alphabetically, with ascending version numbers.
     -   `booky10/yolks:mariadb11.4`
     -   `booky10/yolks:mariadb11.7`
 -   `nodejs`
-    -   `booky10/yolks:nodejs18`
     -   `booky10/yolks:nodejs20`
     -   `booky10/yolks:nodejs22`
     -   `booky10/yolks:nodejs23`
+    -   `booky10/yolks:nodejs24`
 -   `nodejs-gyp`
-    -   `booky10/yolks:nodejsgyp18`
     -   `booky10/yolks:nodejsgyp20`
     -   `booky10/yolks:nodejsgyp22`
     -   `booky10/yolks:nodejsgyp23`
+    -   `booky10/yolks:nodejsgyp24`
 -   `php`
     -   `booky10/yolks:php8.1`
     -   `booky10/yolks:php8.2`
