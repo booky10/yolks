@@ -14,11 +14,9 @@ jobs:
       fail-fast: false
       matrix:
         tag:
-        - go-nodejs/1.23-18
         - go-nodejs/1.23-20
         - go-nodejs/1.23-22
         - go-nodejs/1.23-23
-        - go-nodejs/1.24-18
         - go-nodejs/1.24-20
         - go-nodejs/1.24-22
         - go-nodejs/1.24-23
