@@ -31,9 +31,11 @@ This list is sorted alphabetically, with ascending version numbers.
     -   `booky10/yolks:gonodejs1.23-20`
     -   `booky10/yolks:gonodejs1.23-22`
     -   `booky10/yolks:gonodejs1.23-23`
+    -   `booky10/yolks:gonodejs1.23-24`
     -   `booky10/yolks:gonodejs1.24-20`
     -   `booky10/yolks:gonodejs1.24-22`
     -   `booky10/yolks:gonodejs1.24-23`
+    -   `booky10/yolks:gonodejs1.24-24`
 -   `java`
     -   `booky10/yolks:java8`
     -   `booky10/yolks:java11`
