@@ -53,7 +53,6 @@ This list is sorted alphabetically, with ascending version numbers.
     -   `booky10/yolks:mariadb10.6`
     -   `booky10/yolks:mariadb10.11`
     -   `booky10/yolks:mariadb11.4`
-    -   `booky10/yolks:mariadb11.7`
 -   `nodejs`
     -   `booky10/yolks:nodejs20`
     -   `booky10/yolks:nodejs22`
