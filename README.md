@@ -47,7 +47,6 @@ This list is sorted alphabetically, with ascending version numbers.
     -   `booky10/yolks:javaalpine21`
     -   `booky10/yolks:javaalpine24`
 -   `mariadb`
-    -   `booky10/yolks:mariadb10.5`
     -   `booky10/yolks:mariadb10.6`
     -   `booky10/yolks:mariadb10.11`
     -   `booky10/yolks:mariadb11.4`
