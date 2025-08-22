@@ -25,15 +25,15 @@ This list is sorted alphabetically, with ascending version numbers.
     -   `booky10/yolks:bun1.1`
     -   `booky10/yolks:bun1.2`
 -   `go`
-    -   `booky10/yolks:go1.23`
     -   `booky10/yolks:go1.24`
+    -   `booky10/yolks:go1.25`
 -   `go-nodejs`
-    -   `booky10/yolks:gonodejs1.23-20`
-    -   `booky10/yolks:gonodejs1.23-22`
-    -   `booky10/yolks:gonodejs1.23-24`
     -   `booky10/yolks:gonodejs1.24-20`
     -   `booky10/yolks:gonodejs1.24-22`
     -   `booky10/yolks:gonodejs1.24-24`
+    -   `booky10/yolks:gonodejs1.25-20`
+    -   `booky10/yolks:gonodejs1.25-22`
+    -   `booky10/yolks:gonodejs1.25-24`
 -   `java`
     -   `booky10/yolks:java8`
     -   `booky10/yolks:java11`

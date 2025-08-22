@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Default the TZ environment variable to UTC.
 TZ=${TZ:-UTC}
