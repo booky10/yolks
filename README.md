@@ -77,3 +77,4 @@ This list is sorted alphabetically, with ascending version numbers.
     -   `booky10/yolks:python3.11`
     -   `booky10/yolks:python3.12`
     -   `booky10/yolks:python3.13`
+    -   `booky10/yolks:python3.14`
