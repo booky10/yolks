@@ -17,9 +17,11 @@ jobs:
         - go-nodejs/1.24-20
         - go-nodejs/1.24-22
         - go-nodejs/1.24-24
+        - go-nodejs/1.24-25
         - go-nodejs/1.25-20
         - go-nodejs/1.25-22
         - go-nodejs/1.25-24
+        - go-nodejs/1.25-25
     steps:
     - uses: "booky10/yolks/.github/actions/publish-docker@master"
       with:
