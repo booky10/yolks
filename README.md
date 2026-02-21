@@ -21,22 +21,20 @@ Other images may be available in the repository, but will no longer be updated.
 This list is sorted alphabetically, with ascending version numbers.
 
 -   `bun`
-    -   `booky10/yolks:bun1.0`
-    -   `booky10/yolks:bun1.1`
     -   `booky10/yolks:bun1.2`
     -   `booky10/yolks:bun1.3`
 -   `go`
-    -   `booky10/yolks:go1.24`
     -   `booky10/yolks:go1.25`
+    -   `booky10/yolks:go1.26`
 -   `go-nodejs`
-    -   `booky10/yolks:gonodejs1.24-20`
-    -   `booky10/yolks:gonodejs1.24-22`
-    -   `booky10/yolks:gonodejs1.24-24`
-    -   `booky10/yolks:gonodejs1.24-25`
     -   `booky10/yolks:gonodejs1.25-20`
     -   `booky10/yolks:gonodejs1.25-22`
     -   `booky10/yolks:gonodejs1.25-24`
     -   `booky10/yolks:gonodejs1.25-25`
+    -   `booky10/yolks:gonodejs1.26-20`
+    -   `booky10/yolks:gonodejs1.26-22`
+    -   `booky10/yolks:gonodejs1.26-24`
+    -   `booky10/yolks:gonodejs1.26-25`
 -   `java`
     -   `booky10/yolks:java8`
     -   `booky10/yolks:java11`
@@ -54,7 +52,7 @@ This list is sorted alphabetically, with ascending version numbers.
     -   `booky10/yolks:mariadb10.11`
     -   `booky10/yolks:mariadb11.4`
     -   `booky10/yolks:mariadb11.8`
-    -   `booky10/yolks:mariadb12.0`
+    -   `booky10/yolks:mariadb12.2`
 -   `nodejs`
     -   `booky10/yolks:nodejs20`
     -   `booky10/yolks:nodejs22`
@@ -66,17 +64,16 @@ This list is sorted alphabetically, with ascending version numbers.
     -   `booky10/yolks:nodejsgyp24`
     -   `booky10/yolks:nodejsgyp25`
 -   `php`
-    -   `booky10/yolks:php8.1`
     -   `booky10/yolks:php8.2`
     -   `booky10/yolks:php8.3`
     -   `booky10/yolks:php8.4`
+    -   `booky10/yolks:php8.5`
 -   `php-nginx`
-    -   `booky10/yolks:phpnginx8.1`
     -   `booky10/yolks:phpnginx8.2`
     -   `booky10/yolks:phpnginx8.3`
     -   `booky10/yolks:phpnginx8.4`
+    -   `booky10/yolks:phpnginx8.5`
 -   `python`
-    -   `booky10/yolks:python3.9`
     -   `booky10/yolks:python3.10`
     -   `booky10/yolks:python3.11`
     -   `booky10/yolks:python3.12`
