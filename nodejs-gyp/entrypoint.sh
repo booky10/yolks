@@ -24,8 +24,9 @@ node --version
 # replacing the values.
 PARSED=$(echo "${STARTUP}" | sed -e 's/{{/${/g' -e 's/}}/}/g' | envsubst)
 
-# Display the command we're running in the output, and then execute it with the env
-# from the container itself.
+# Display the command we're running in the output before execution
 printf "\033[1m\033[33mcontainer@pterodactyl~ \033[0m%s\n" "$PARSED"
+
+# pass the parsed startup args to sh for execution
 # shellcheck disable=SC2086
 exec sh -c "${PARSED}"

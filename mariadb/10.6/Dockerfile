@@ -8,7 +8,7 @@ LABEL       org.opencontainers.image.licenses=MIT
 ENV         DEBIAN_FRONTEND=noninteractive
 
 RUN         apt-get update -y \
-        && apt-get install -y netcat \
+        && apt-get install -y netcat gettext-base \
         && useradd -d /home/container -m container -s /bin/bash
 
 USER        container

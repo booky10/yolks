@@ -5,7 +5,7 @@ LABEL       author="booky" maintainer="booky@booky.dev"
 LABEL       org.opencontainers.image.source="https://github.com/booky10/yolks"
 LABEL       org.opencontainers.image.licenses=MIT
 
-RUN         apk add --update --no-cache ca-certificates wget curl ffmpeg git openssl sqlite tar tzdata \
+RUN         apk add --update --no-cache ca-certificates wget curl ffmpeg git openssl sqlite tar tzdata envsubst \
 	&& apk --no-cache add --repository=https://dl-cdn.alpinelinux.org/alpine/v3.22/community php82 php82-fpm php82-soap php82-openssl php82-gmp php82-pdo php82-pdo_odbc php82-pdo_pgsql php82-pdo_mysql php82-pdo_sqlite php82-pdo_dblib php82-dom php82-zip php82-mysqli php82-sqlite3 php82-bcmath php82-gd php82-odbc php82-gettext php82-xml php82-simplexml php82-xmlreader php82-xmlwriter php82-bz2 php82-iconv php82-curl php82-ctype php82-phar php82-fileinfo php82-mbstring php82-tokenizer php82-session php82-pecl-apcu php82-pear php82-pecl-swoole php82-cli \
 	&& ln -sf /usr/bin/php82 /usr/bin/php \
 	&& curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer \
