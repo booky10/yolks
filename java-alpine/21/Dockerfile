@@ -1,6 +1,6 @@
 FROM        --platform=$TARGETOS/$TARGETARCH eclipse-temurin:21-jre-alpine
 
-LABEL       author="booky10" maintainer="boooky10@gmail.com"
+LABEL       author="booky" maintainer="booky@booky.dev"
 
 LABEL       org.opencontainers.image.source="https://github.com/booky10/yolks"
 LABEL       org.opencontainers.image.licenses=MIT
