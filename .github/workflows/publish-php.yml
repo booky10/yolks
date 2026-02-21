@@ -1,6 +1,8 @@
 name: Publish PHP Images
 on:
   workflow_dispatch:
+  schedule:
+  - cron: '0 17 * * 6'
   push:
     branches:
     - master
@@ -14,10 +16,10 @@ jobs:
       fail-fast: false
       matrix:
         tag:
-        - php/8.1
         - php/8.2
         - php/8.3
         - php/8.4
+        - php/8.5
     steps:
     - uses: "booky10/yolks/.github/actions/publish-docker@master"
       with:

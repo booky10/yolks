@@ -1,6 +1,8 @@
 name: Publish MariaDB Images
 on:
   workflow_dispatch:
+  schedule:
+  - cron: '0 17 * * 6'
   push:
     branches:
     - master
@@ -18,7 +20,7 @@ jobs:
         - mariadb/10.11
         - mariadb/11.4
         - mariadb/11.8
-        - mariadb/12.0
+        - mariadb/12.2
     steps:
     - uses: "booky10/yolks/.github/actions/publish-docker@master"
       with:

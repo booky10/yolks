@@ -1,6 +1,8 @@
 name: Publish Bun Images
 on:
   workflow_dispatch:
+  schedule:
+  - cron: '0 17 * * 6'
   push:
     branches:
     - master
@@ -14,8 +16,6 @@ jobs:
       fail-fast: false
       matrix:
         tag:
-        - bun/1.0
-        - bun/1.1
         - bun/1.2
         - bun/1.3
     steps:

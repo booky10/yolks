@@ -1,13 +1,15 @@
-FROM        --platform=$TARGETOS/$TARGETARCH oven/bun:1.1
+FROM        --platform=$TARGETOS/$TARGETARCH mariadb:12.2
 
-LABEL       author="booky10" maintainer="boooky10@gmail.com"
+LABEL       author="booky" maintainer="booky@booky.dev"
 
 LABEL       org.opencontainers.image.source="https://github.com/booky10/yolks"
 LABEL       org.opencontainers.image.licenses=MIT
 
-RUN 		apt-get update -y \
- 			&& apt-get install -y lsof curl ca-certificates openssl git tar sqlite3 fontconfig libfreetype6 tzdata iproute2 libstdc++6 \
- 			&& useradd -d /home/container -m container
+ENV         DEBIAN_FRONTEND=noninteractive
+
+RUN         apt-get update -y \
+                && apt-get install -y netcat-openbsd \
+                && useradd -d /home/container -m container -s /bin/bash
 
 USER        container
 ENV         USER=container HOME=/home/container

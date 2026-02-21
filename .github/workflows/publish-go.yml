@@ -1,6 +1,8 @@
 name: Publish Go Images
 on:
   workflow_dispatch:
+  schedule:
+  - cron: '0 17 * * 6'
   push:
     branches:
     - master
@@ -14,8 +16,8 @@ jobs:
       fail-fast: false
       matrix:
         tag:
-        - go/1.24
         - go/1.25
+        - go/1.26
     steps:
     - uses: "booky10/yolks/.github/actions/publish-docker@master"
       with:

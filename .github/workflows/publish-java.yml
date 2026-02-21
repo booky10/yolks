@@ -1,6 +1,8 @@
 name: Publish Java Images
 on:
   workflow_dispatch:
+  schedule:
+  - cron: '0 17 * * 6'
   push:
     branches:
     - master
