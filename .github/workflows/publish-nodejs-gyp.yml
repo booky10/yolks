@@ -18,7 +18,6 @@ jobs:
         tag:
         - nodejs-gyp/22
         - nodejs-gyp/24
-        - nodejs-gyp/25
         - nodejs-gyp/26
     steps:
     - uses: "booky10/yolks/.github/actions/publish-docker@master"
