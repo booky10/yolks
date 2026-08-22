@@ -16,8 +16,8 @@ jobs:
       fail-fast: false
       matrix:
         tag:
-        - go/1.25
         - go/1.26
+        - go/1.27
     steps:
     - uses: "booky10/yolks/.github/actions/publish-docker@master"
       with:
