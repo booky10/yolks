@@ -16,11 +16,11 @@ jobs:
       fail-fast: false
       matrix:
         tag:
-        - mariadb/10.6
         - mariadb/10.11
         - mariadb/11.4
         - mariadb/11.8
         - mariadb/12.3
+        - mariadb/13.0
     steps:
     - uses: "booky10/yolks/.github/actions/publish-docker@master"
       with:
